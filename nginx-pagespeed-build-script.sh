@@ -1,11 +1,16 @@
 #!/bin/bash
 
+# Fail is errors occur.
+set -e
 # Edit Nginx and Pagespeed versions here if different version is desired.
 NGINX_VERSION=nginx-1.10.1
 # Pagespeed version
 PAGESPEED_VERSION=1.11.33.2
 
 #yum install wget tar make git curl unzip gcc-c++ pcre-devel zlib-devel openssl-devel libxml2-devel libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP-devel
+
+mkdir nginx-build-files
+cd nginx-build-files
 
 wget http://nginx.org/download/$NGINX_VERSION.tar.gz
 
