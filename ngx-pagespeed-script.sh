@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Fail is errors occur.
 set -e
 # Edit Nginx and Pagespeed versions here if different version is desired.
